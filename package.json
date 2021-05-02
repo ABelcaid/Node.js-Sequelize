@@ -1,0 +1,23 @@
+{
+  "name": "node.js-sequelize",
+  "version": "1.0.0",
+  "description": "How to build a REST API with node js and Sequelize",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABelcaid/Node.js-Sequelize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABelcaid/Node.js-Sequelize/issues"
+  },
+  "homepage": "https://github.com/ABelcaid/Node.js-Sequelize#readme",
+  "dependencies": {
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}
