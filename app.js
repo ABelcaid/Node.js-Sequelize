@@ -30,7 +30,6 @@ app.get('/users', async (req, res) => {
     res.json(error);
   }
 
-
 });
 
 
@@ -69,7 +68,7 @@ app.post('/users', async (req, res) => {
 
   try {
 
-    const newUser = new User({
+    await User.create({
 
       name: req.body.name,
       username: req.body.username,
@@ -78,8 +77,6 @@ app.post('/users', async (req, res) => {
       phone: req.body.phone,
 
     });
-
-    const saveUser = await newUser.save();
 
     res.send('User added');
 
@@ -118,8 +115,6 @@ app.put('/users/:id', async (req, res) => {
   } catch (error) {
     res.json(error);
   }
-
-
 
 });
 
